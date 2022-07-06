@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/style.css">
+</head>
+
+<body>
+    <form action="result.html">
+        <div class="container">
+            <section class="first">
+                <div class="up"></div>
+                <h2>Summer School</h2>
+                <p id="para">Don't miss this chance because it is planning to launch. A few short courses & sessions in your summer vacations for FREE!
+                <ul>- Only for HSII students</ul>
+                <ul> - Stay tuned!</ul>
+                </p>
+            </section>
+            <section class="second">
+                <label for="">Full Name:</label>
+                <input type='text' id="saveServer" onFocus="present(this)" onBlur="absent(this)" required /> <br> <br>
+                <label for="">Email:</label>
+                <input type="email" class="li" id="mail" onFocus="present(this)" onBlur="absent(this)" required>
+            </section>
+            <section class="third">
+                <label for="">City:</label>
+                <input type="text" class="l" id="city" onFocus="present(this)" onBlur="fillcity(this) " required>
+                <br> <br>
+                <label for="">City Code: </label>
+                <input type="text" id="zip" onFocus="present(this)" onBlur="absent(this)">
+            </section>
+            <section class="forth">
+                <p for="">Are you interested to utilize this GOLDEN OPPORTUNITY?</p>
+                <input type="radio" required name="interested">
+                <label for="">Yes</label> <br> <br>
+                <input type="radio" required name="interested">
+                <label for="">No</label>
+            </section>
+            <section class="fifth">
+                <p>What technology do you wanna learn?</p>
+                <input type="checkbox" name="choice" id="check">
+                <label for="check">PHP</label> <br> <br>
+                <input type="checkbox" name="choice" id="check">
+                <label for="check">Java</label> <br> <br>
+                <input type="checkbox" name="choice" id="check">
+                <label for="check">JavaScript</label> <br> <br>
+                <input type="checkbox" name="choice" id="check">
+                <label for="check">TypeScript</label> <br> <br>
+                <input type="checkbox" name="choice" id="check">
+                <label for="check">React</label> <br> <br>
+            </section>
+            <section class="sixth">
+                <p>Your Convenience is in?</p>
+                <input type="radio" id="convenience" name="convenience" required>
+                <label for="convenience">Yes</label> <br>
+                <input type="radio" id="convenience" name="convenience" required>
+                <label for="convenience">No</label> <br> <br>
+            </section>
+            <button onclick="save_data()"  id="bt" type="submit">Submit</button>
+            
+            <button type="reset">Clear form</button>
+        </div>
+    </form>
+    <script src="./assests/index.js"></script>
+</body>
+
+</html>
